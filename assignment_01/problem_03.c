@@ -4,13 +4,17 @@
 #include <stdlib.h>
 
 int main() {
-    int a;
-    int b;
-    scanf("%d %d", &a, &b);
-     int c = a * b;
-    printf("%d", c);
-    
+    long long int n;
+    int d = 3;
+    scanf("%lld", &n);
+   
+    if(n%d == 0){
+        printf("YES \n");
+    }else{
+        printf("NO \n");
+    }
+       
+ 
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
     return 0;
 }
-
