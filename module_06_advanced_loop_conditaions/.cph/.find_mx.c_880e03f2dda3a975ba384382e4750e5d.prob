@@ -1,0 +1,1 @@
+{"name":"Local: find_mx","url":"/home/jagadischakma/CSE Fundamentals/module_06/find_mx.c","tests":[{"id":1696858225092,"input":"5\n1 8 5 7 5","output":"8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/jagadischakma/CSE Fundamentals/module_06/find_mx.c","group":"local","local":true}
