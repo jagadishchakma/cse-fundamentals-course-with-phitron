@@ -1,0 +1,1 @@
+{"name":"Local: problem_04","url":"/home/jagadischakma/CSE Fundamentals/module_08_assignment_02/problem_04.c","tests":[{"id":1697127789812,"input":"6\n5 -3 9 -10 2 8 ","output":"24 -13"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/jagadischakma/CSE Fundamentals/module_08_assignment_02/problem_04.c","group":"local","local":true}
