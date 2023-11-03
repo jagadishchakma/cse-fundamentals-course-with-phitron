@@ -1,0 +1,1 @@
+{"name":"Local: sum_of_two","url":"/home/jagadischakma/CSE Fundamentals/module_13_nested_loop_recape/sum_of_two.c","tests":[{"id":1698220731459,"input":"5\n2 7 5 10 3\n13","output":"YES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/jagadischakma/CSE Fundamentals/module_13_nested_loop_recape/sum_of_two.c","group":"local","local":true}

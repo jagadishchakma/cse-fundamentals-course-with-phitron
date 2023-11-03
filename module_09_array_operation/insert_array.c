@@ -2,23 +2,34 @@
 int main(){
     int n;
     scanf("%d", &n);
-    int arr[n+1];
-    for (int i = 0; i < n; i++)
+    int arr[n];
+    for (int i = 0; i < n; i++) // step 01: input array
     {
         scanf("%d", &arr[i]);
     }
-    int pos,val;
-    scanf("%d %d", &pos, &val);
-    for (int i = n; i >= pos; i--)
+    // step 02: input insert value value and position
+    int val;
+    int pos;
+    scanf("%d %d", &val, &pos);
+    // step 03: create a new array that one size big from copying array
+    int arr2[n+1];
+    // step 04: form right side back to back array position changed while position is coming
+    for (int i = n; 0 <= i; i--)
     {
-        arr[i]= arr[i-1];
+        if(pos <= i){
+            arr2[i] = arr[i-1];
+        }else if(i < pos){
+            arr2[i-1] = arr[i-1];
+        }
     }
-
-    arr[pos-1] = val;
+    // step 05: insert new array with her choose position
+    arr2[pos-1] = val;
+    // step 06: print new array
     for (int i = 0; i <= n; i++)
     {
-       printf("%d ", arr[i]);
+        printf("%d ", arr2[i]);
     }
+    
     
     
     getchar();

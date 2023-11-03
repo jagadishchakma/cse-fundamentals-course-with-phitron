@@ -1,0 +1,1 @@
+{"name":"Local: problem_01","url":"/home/jagadischakma/CSE Fundamentals/module_10.5_practice/problem_01.c","tests":[{"id":1697540665724,"input":"5\n1 -2 0 3 4","output":"1 4 0 3 -2 "}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/jagadischakma/CSE Fundamentals/module_10.5_practice/problem_01.c","group":"local","local":true}

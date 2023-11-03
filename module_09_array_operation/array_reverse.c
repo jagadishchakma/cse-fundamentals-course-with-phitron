@@ -5,22 +5,21 @@ int main(){
     int arr[n];
     for (int i = 0; i < n; i++)
     {
-        scanf("%d", &arr[i]);
+       scanf("%d", &arr[i]);
     }
-    int min = 0;
-    int max = n-1;
-    while (min < max)
+    int lastIndex = n-1;
+    for (int i = 0; i < lastIndex; i++)
     {
-        int tmp = arr[min];
-        arr[min] = arr[max];
-        arr[max] = tmp;
-        min++;
-        max--;
+        int tmp = arr[i];
+        arr[i] = arr[lastIndex];
+        arr[lastIndex]=tmp;
+        lastIndex--;
     }
     for (int i = 0; i < n; i++)
     {
-        printf("%d ", arr[i]);
+        printf("%d ",arr[i]);
     }
+    
     
     
     getchar();

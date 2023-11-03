@@ -1,0 +1,1 @@
+{"name":"Local: problem_07","url":"/home/jagadischakma/CSE Fundamentals/module_12_assignment 3/problem_07.c","tests":[{"id":1697736667459,"input":"2\n6\n1 2 3 4 5 6\n3\n5\n10 20 30 40 50 70","output":"YES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/jagadischakma/CSE Fundamentals/module_12_assignment 3/problem_07.c","group":"local","local":true}
