@@ -83,6 +83,33 @@ void insert_position(Node* &head, Node* &tail, int val, int pos){
 
     
 };
+void delete_position(Node* &head, Node* &tail, int pos){
+    Node* tmp = head;
+    for (int i = 1; i < pos; i++)
+    {
+        if(tmp== NULL) break;
+        tmp = tmp->next;
+    }
+    if(tmp == NULL){
+        cout << "Invalid Positions" << endl;
+    }else if(pos ==1){
+        Node* del = tmp;
+        tmp->next->prev = NULL;
+        head = tmp->next;
+        delete del;
+    }else if(pos == get_size(head)-1){
+        Node* del = tmp;
+        tmp->prev->next = NULL;
+        tail = tmp->prev;
+        delete del;
+    }else{
+        Node* del = tmp;
+        tmp->prev->next = tmp->next;
+        tmp->next->prev = tmp->prev;
+        delete del;
+    }
+    
+}
 
 int main(){
     Node* head = NULL;
@@ -98,6 +125,11 @@ int main(){
     int val,pos;
     cin >> val >> pos;
     insert_position(head,tail,val,pos);
+    output_normal(head);
+    output_inverse(tail);
+    int del;
+    cin >> del;
+    delete_position(head,tail,del);
     output_normal(head);
     output_inverse(tail);
     return 0;
