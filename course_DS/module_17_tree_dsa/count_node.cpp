@@ -11,13 +11,11 @@ class Node{
         this->right = NULL;
     }
 };
-void postorder(Node* root){
-    if(root == NULL){
-        return;
-    };
-    postorder(root->left);
-    postorder(root->right);
-    cout << root->val <<  " ";
+int count(Node* root){
+    if(root == NULL) return 0;
+    int l = count(root->left);
+    int r = count(root->right);
+    return l+r+1;
 };
 int main(){
     Node* root = new Node(10);
@@ -27,14 +25,20 @@ int main(){
     Node* d = new Node(50);
     Node* e = new Node(60);
     Node* f = new Node(70);
+    Node* g = new Node(80);
+    Node* h = new Node(90);
+    Node* i = new Node(100);
 
     root->left = a;
     root->right = b;
     a->left = c;
-    a->right = d;
-    b->left = e;
-    b->right = f;
-   
-    postorder(root);
+    a->right = h;
+    b->right = d;
+    c->right = e;
+    h->right = i;
+    d->left = f;
+    d->right = g;
+    int total = count(root);
+    cout << total ;
     return 0;
 }
