@@ -1,0 +1,1 @@
+{"name":"Local: edge_list","url":"/home/jagadischakma/CSE Fundamentals/course_algorithm/dsu_recape/edge_list.cpp","tests":[{"id":1707995830943,"input":"4 4\n1 0\n0 2\n0 3\n2 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/jagadischakma/CSE Fundamentals/course_algorithm/dsu_recape/edge_list.cpp","group":"local","local":true}
